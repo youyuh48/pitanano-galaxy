@@ -32,7 +32,7 @@
 
 ```
 $ docker create -v /export --name galaxy-store \
- youyuh48/pitanano-galaxy /bin/true
+ youyuh48/pitanano-galaxy:0.1 /bin/true
 ```
 
 ## 動かす
