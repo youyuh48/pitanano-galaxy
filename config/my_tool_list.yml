@@ -1,0 +1,116 @@
+api_key: admin
+galaxy_instance: http://localhost:8080
+install_resolver_dependencies: true
+install_tool_dependencies: false
+tools:
+
+# FASTQ Quality Control
+- name: fastqc
+  owner: devteam
+  tool_panel_section_label: 'FASTQ Quality Control'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: trimmomatic
+  owner: pjbriggs
+  tool_panel_section_label: 'FASTQ Quality Control'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: nanoplot
+  owner: iuc
+  tool_panel_section_label: 'FASTQ Quality Control'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: nanostat
+  owner: leomrtns
+  tool_panel_section_label: 'FASTQ Quality Control'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: nanofilt
+  owner: leomrtns
+  tool_panel_section_label: 'FASTQ Quality Control'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: porechop
+  owner: jdv
+  tool_panel_section_label: 'FASTQ Quality Control'
+  tool_shed_url: http://testtoolshed.g2.bx.psu.edu
+
+# FASTQ Manipulation: seqtk
+- name: seqtk
+  owner: iuc
+  tool_panel_section_label: 'FASTQ Manipulation: seqtk'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+# Metagenomics
+- name: centrifuge
+  owner: jdv
+  tool_panel_section_label: 'Metagenomics'
+  tool_shed_url: http://testtoolshed.g2.bx.psu.edu
+
+- name: centrifuge_kreport
+  owner: youyuh48
+  tool_panel_section_label: 'Metagenomics'
+  tool_shed_url: http://testtoolshed.g2.bx.psu.edu
+
+- name: ctat_centrifuge_indexes_data_manager
+  owner: trinity_ctat
+  tool_panel_section_label: 'Metagenomics'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: taxonomy_krona_chart
+  owner: crs4
+  tool_panel_section_label: 'Metagenomics'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+# Mapping
+- name: bwa
+  owner: devteam
+  tool_panel_section_label: 'Mapping'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: minimap2
+  owner: iuc
+  tool_panel_section_label: 'Mapping'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: sniffles
+  owner: youyuh48
+  tool_panel_section_label: 'Mapping'
+  tool_shed_url: http://testtoolshed.g2.bx.psu.edu
+
+# SAM/BAM
+- name: suite_samtools
+  owner: iuc
+  tool_panel_section_label: 'SAMTOOLS'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: bamtools
+  owner: devteam
+  tool_panel_section_label: 'BAMTOOLS'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+# Assembly
+- name: unicycler
+  owner: iuc
+  tool_panel_section_label: 'Assembly'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: flye
+  owner: thanhlv
+  tool_panel_section_label: 'Assembly'
+  tool_shed_url: http://testtoolshed.g2.bx.psu.edu
+
+- name: wtdbg2
+  owner: mvdbeek
+  tool_panel_section_label: 'Assembly'
+  tool_shed_url: http://testtoolshed.g2.bx.psu.edu
+
+- name: pilon
+  owner: iuc
+  tool_panel_section_label: 'Assembly'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: medaka_consensus
+  owner: youyuh48
+  tool_panel_section_label: 'Assembly'
+  tool_shed_url: http://testtoolshed.g2.bx.psu.edu
