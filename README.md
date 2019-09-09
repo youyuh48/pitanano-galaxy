@@ -10,17 +10,23 @@
   - FastQC
   - Trimmomatic
   - NanoPlot
+  - NanoFilt
   - Porechop
 - FASTQファイルの操作
   - seqtk
 - メタゲノム解析
   - Centrifuge
   - Krona
-- マッピング
-  - BWA-MEM
+- マッピング&SV検出
+  - minimap2
+  - Sniffles
 - De novoアセンブル
-  - Unicycler
   - Canu
+  - Unicycler
+  - Flye
+  - wtdbg2 (Redbean)
+  - Pilon
+  - Medaka
 
 上記の他にもGalaxy ToolShedに登録されている様々なNGS解析ツールがGalaxy環境に追加インストール可能です。
 
@@ -32,7 +38,7 @@
 
 ```
 $ docker create -v /export --name galaxy-store \
- youyuh48/pitanano-galaxy:0.1 /bin/true
+ youyuh48/pitanano-galaxy:0.2 /bin/true
 ```
 
 ## 動かす
@@ -40,8 +46,7 @@ $ docker create -v /export --name galaxy-store \
 ```
 $ docker run -d -p 8080:80 \
  --volumes-from galaxy-store \
- youyuh48/pitanano-galaxy:0.1 \
- /usr/bin/startup
+ youyuh48/pitanano-galaxy:0.2
 ```
 
 ブラウザから `http://localhost:8080` を開くとGalaxyにアクセスできる。
